@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter&family=Marmelad&display=swap');
+body{
+    margin: 0;
+    padding: 0;
+    background-color: #FDF9F4;
+}
+form{
+    font-family: 'Inter', sans-serif;
+    font-size: 64px;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+}
+input{
+    padding-top: 4px;
+}
+.h{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #bebebe;
+}
+.line{
+    width: 100%;
+    height: 6px;
+    background-color: gray;
+}
+main{
+    height: 1600px;
+}
+.apps{
+    margin-top: 100px;
+}
+.dog{
+    width: 503px;
+}
+.photo{
+    display: flex;
+    padding-top: 70px;
+    padding-bottom: 70px;
+    padding-left: 10px;
+    padding-right: 10px;
+    flex-wrap: wrap;
+    border: 3px solid #bebebe;
+}
+p{
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+}
+.text{
+    width: 1192px;
+    margin-left: 30px;
+    margin-top: 100px;
+}
+h1{
+    font-family: 'Marmelad';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 64px;
+    line-height: 76px;
+    text-align: center;
+    color: #FFFFFF;
+    text-shadow: 0px 2px 4px rgba(0, 0, 0, 0.25);
+}
+header{
+    background-color: #242F4B;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+sh{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin-top: 70px;
+}
+pd{
+    color: white;
+    font-family: 'Inter', sans-serif;
+    margin-top: 10px;
+}
+footer{
+    background-color: #242F4B;
+    padding-top: 50px;
+    padding-bottom: 30px;
+    padding-left: 6px;
+    padding-right: 6px;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+a{
+    font-family: 'Marmelad', sans-serif;
+    color: white;
+    font-size: 64px;
+    font-family: 'Marmelad';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 36px;
+    line-height: 43px;
+    text-align: center;
+    text-decoration-line: underline;
+    color: #FFFFFF;
+    text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
+    margin-bottom: 20px;
+}
+
+form {
+    border: 3px solid #bebebe;
+    padding-bottom: 90px;
+}
+
+input[type=text], input[type=password] {
+    width: 18%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid #ccc;
+    box-sizing: border-box;
+}
+
+button {
+    background-color: #242F4B;
+    color: white;
+    padding: 14px 20px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 18%;
+}
+
+button:hover {
+    opacity: 0.8;
+}
