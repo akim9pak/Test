@@ -14,6 +14,16 @@ form{
 input{
     padding-top: 4px;
 }
+.karysel{
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    border: 3px solid #bebebe;
+}
+.bx-wrapper {
+    width: 768px;
+    margin: auto;
+}
 .h{
     display: flex;
     align-items: center;
@@ -25,9 +35,6 @@ input{
     height: 6px;
     background-color: gray;
 }
-main{
-    height: 1600px;
-}
 .apps{
     margin-top: 100px;
 }
@@ -36,12 +43,14 @@ main{
 }
 .photo{
     display: flex;
-    padding-top: 70px;
+    padding-top: 170px;
     padding-bottom: 70px;
     padding-left: 10px;
     padding-right: 10px;
-    flex-wrap: wrap;
+    flex-direction: column;
+    align-items: center;
     border: 3px solid #bebebe;
+    color: black;
 }
 p{
     font-family: 'Inter', sans-serif;
@@ -64,18 +73,21 @@ h1{
 }
 header{
     background-color: #242F4B;
-    padding-top: 10px;
-    padding-bottom: 10px;
+    width: 100%;
     padding-left: 6px;
     padding-right: 6px;
     display: flex;
     flex-direction: row;
     justify-content: space-between;
 }
+h2{
+    font-family: 'Inter', sans-serif;
+}
 sh{
     color: white;
     font-family: 'Inter', sans-serif;
     margin-top: 70px;
+    padding-right: 10px;
 }
 pd{
     color: white;
@@ -84,6 +96,7 @@ pd{
 }
 footer{
     background-color: #242F4B;
+    color: white;
     padding-top: 50px;
     padding-bottom: 30px;
     padding-left: 6px;
@@ -94,7 +107,6 @@ footer{
 }
 a{
     font-family: 'Marmelad', sans-serif;
-    color: white;
     font-size: 64px;
     font-family: 'Marmelad';
     font-style: normal;
@@ -103,18 +115,19 @@ a{
     line-height: 43px;
     text-align: center;
     text-decoration-line: underline;
-    color: #FFFFFF;
     text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
     margin-bottom: 20px;
 }
-
+a:visited{
+    color: black;
+}
 form {
     border: 3px solid #bebebe;
     padding-bottom: 90px;
 }
 
 input[type=text], input[type=password] {
-    width: 18%;
+    width: 150px;
     padding: 12px 20px;
     margin: 8px 0;
     display: inline-block;
@@ -129,9 +142,33 @@ button {
     margin: 8px 0;
     border: none;
     cursor: pointer;
-    width: 18%;
+    width: 150px;
 }
 
 button:hover {
     opacity: 0.8;
+}
+
+@media (max-width: 1181px) {
+    .dog{
+        width: 251px;
+    }
+    .text{
+        width: 596px;
+        margin-left: 30px;
+        margin-top: 100px;
+    }
+}
+@media (max-width: 575px) {
+    .text{
+        width: 500px;
+        margin-left: 15px;
+        margin-top: 1px;
+    }
+    p{
+        font-size: 28px;
+    }
+    .apps{
+        width: 500px;
+    }
 }

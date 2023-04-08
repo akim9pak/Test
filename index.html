@@ -6,46 +6,73 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
     <title>Document</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/bxslider/4.2.12/jquery.bxslider.min.js"></script>
 </head>
-<body>
     <header>
         <h1>Web Design</h1>
         <sh>это шапка</sh>
     </header>
-        <div class="photo">
-            <div>
-                <img class="dog" src="image.png">
-            </div>
-            <div class="text">
-                <p>Привет! Я веб-дизайнер, могу сделать макет, сверстать, и подобрать
-                хостинг для вашего сайта.
-                
-                Я всегда на связи и вы всегда можете посмотреть на варианты в процессе
-                разработки и сказать что добавить а что изменить.
-                
-                У меня есть все социальные сети чтобы вам всегда было удобно выходить
-                со мной на связь.
-                
-                Связатся же со мной можно посмотрев ниже.</p>
-            </div>
+    <div class="photo">
+        <div>
+            <img class="dog" src="image.png">
         </div>
-        
-        <div class = 'h'>
-            <p>Что я использую?</p>
-            <p>Я работаю с HTML, CSS и JavaScript.</p>
-            <p>Программы: VSC и Figma</p>
-            <img class = 'apps' src = 'apps.PNG'>
+        <div class="text">
+            <p>Привет! Я веб-дизайнер, могу сделать макет, сверстать, и подобрать
+            хостинг для вашего сайта.
+            
+            Я всегда на связи и вы всегда можете посмотреть на варианты в процессе
+            разработки и сказать что добавить а что изменить.
+            
+            У меня есть все социальные сети чтобы вам всегда было удобно выходить
+            со мной на связь.
+            
+            Связатся же со мной можно посмотрев ниже.</p>
+            <a class="scroll" href="#block3">Связь</a>
         </div>
-        
-        <form>
-            <h4>Обратная связь</h4>
-            <input type="text" value="Почта"></input>
-            <button type="button" class=".btn">Отправить</button>
-        </form>
-    </main>
-    <footer>
-        <a src="https://allmylinks.com/akimka92310">Мои контакты</a>
-        <pd>это подвал</pd>
-    </footer>
+    </div>
+    
+    <div class = 'h'>
+        <p>Что я использую?</p>
+        <p>Я работаю с HTML, CSS и JavaScript.</p>
+        <p>Программы: VSC и Figma</p>
+        <img class = 'apps' src = 'apps.PNG'>
+    </div>
+    <div class = karysel>
+        <h2>Примеры работ</h2>
+        <div class="slider">
+            <div><img src="drafta.jpg"></div>
+            <div><img src="mission.jpg"></div>
+            <div><img src="state_of_js_2018.jpg"></div>
+        </div>
+    </div>
+
+    <form id="block3">
+        <h4>Обратная связь</h4>
+        <input type="text" value="Почта"></input>
+        <button type="button" class=".btn">Отправить</button>
+    </form>
+<footer>
+    <a src="https://allmylinks.com/akimka92310">Мои контакты</a>
+    <pd>это подвал</pd>
+</footer>
+<script>
+    let links = document.querySelectorAll('.scroll');
+    let targetID;
+    links.forEach(function (element) {
+        element.addEventListener('click', function (event) {
+            event.preventDefault()
+            targetID = element.getAttribute('href');
+            document.querySelector(targetID).scrollIntoView({
+                behavior: 'smooth',
+                block: 'start'
+            })
+        })
+    })
+    $(document).ready(function () {
+        $('.slider').bxSlider();
+    });
+</script>
 </body>
 </html>
